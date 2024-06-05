@@ -9,4 +9,7 @@ let blackaf1 = 150
 let travis = 1839
 let mcq = 120
 let nbrb = 240
-let 
+let bred = 439
+let foamrunners = 221
+let diorjordan = 9979
+
