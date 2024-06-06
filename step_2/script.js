@@ -12,4 +12,10 @@ let nbrb = 240
 let bred = 439
 let foamrunners = 221
 let diorjordan = 9979
+let airmax = 230
+let nikerunner = 95
+let solidgold = 2100000
+let ugg = 135
+
+
 
