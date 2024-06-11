@@ -6,6 +6,7 @@
   <title>GAME</title>
 <link rel = "stylesheet" href = "game.css">
 <link rel = "icon" href = "souleater.png">
+<script src = "script.js" defer></script>
 </head>
 
 
@@ -18,8 +19,15 @@
 
 <br>
 
-<center><label for="Price">Your Price Guess:</label>
-<input type="number" id="Name" name="Name" placeholder="0$"><center>
+<center>
+<div class="input-group mb-3">
+  <input type = "number" class = "form-control" id = "userInput" placeholder ="0$">
+  <div class = "input-group-append">
+    <button class ="btn btn-secondary" id = "subButton">Confirm</button>
+</div>
+</div>
+</center>
+
 
 </ul>
 
