@@ -1,5 +1,10 @@
 'use strict';
 
+const image = new Image()
+
+image.src = "kaws4.jpg"
+document.getElementById("kaws4").appendChild(image);
+
 let blackcats = 1170
 let kaws4 = 2379
 let monarch = 80
@@ -29,8 +34,16 @@ function getInput(){
 var myButton = document.getElementById('myButton');
 myButton.addEventListener('click',getInput, false);
 
-let img = new Image();
-img.src = "kaws4.jpg"
-document.getElementById('body').appendChild(img);
+
+
+function show_image(src, width, height, alt) {
+  var img = document.createElement("img");
+  img.src = kaws4.jpg;
+  img.width = 200;
+  img.height = 200;
+  img.alt = alt;
+  document.body.appendChild(img);
+}
+  console.log(show_image(kaws4.jpg, 200, 200,alt))
 
 
