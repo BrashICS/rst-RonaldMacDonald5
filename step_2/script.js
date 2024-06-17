@@ -6,7 +6,6 @@ function getInput(){
   var userinput = document.getElementById('userInput').value;
 }
 
-
 const shoesData = [
 [1170,"blackcats.webp"],
 [2380,"kaws4.jpg"],
@@ -26,15 +25,12 @@ const shoesData = [
 [140, "ugg.jpeg"]
 ]
 
-
-
 function updateShoeImage () {
 
   const shoeindex = document.getElementById('shoeSelect').value;
   console.log(shoeindex)
   const shoeImage = document.getElementById('shoeImage');
   shoeImage.src = shoesData[shoeindex][1]
-
 }
 
 function checkGuess () {
@@ -51,4 +47,3 @@ function checkGuess () {
     alert("Congratulations! You guessed the correct price");
   }
   }
-
