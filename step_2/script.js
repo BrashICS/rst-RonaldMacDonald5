@@ -51,7 +51,7 @@ const shoesData = [
 
 
 function updateShoeImage () {
-  console.log("hellooo" )
+  
   const shoeindex = document.getElementById('shoeSelect').value;
   console.log(shoeindex)
   const shoeImage = document.getElementById('shoeImage');
