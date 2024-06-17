@@ -2,8 +2,7 @@
 
 const image = new Image()
 
-image.src = "kaws4.jpg"
-document.getElementById("kaws4").appendChild(image);
+
 
 let blackcats = 1170
 let kaws4 = 2379
@@ -26,52 +25,45 @@ function getInput(){
   var userinput = document.getElementById('userInput').value;
 }
 
-var myButton = document.getElementById('myButton');
-myButton.addEventListener('click',getInput, false);
 
 
 
-function show_image(src, width, height, alt) {
-  var img = document.createElement("img");
-  img.src = kaws4.jpg;
-  img.width = 200;
-  img.height = 200;
-  img.alt = alt;
-  document.body.appendChild(img);
-}
-  console.log(show_image(kaws4.jpg, 200, 200,alt))
 
 const shoesData = [
-  { price:1170, image: 'blackcats.webp'},
-  { price:2379, image: 'kaws4.jpg'},
-  {price:80, image: 'monarch.jpg'},
-  {price:300, image:'bigredboots.jpg'},
-  {price:37136, image:'airmag.webp'},
-  {price:150,  image:'blackaf1'},
-  {price:1839, image:'travis.webp'},
-  {price:120,  image:'mc1.webp'},
-  {price:240,  image:'1906rnb.webp'},
-  {price:439,  image:'bred11.jpg'},
-  {price:221, image:'foamrunners.jpg'},
-  {price:9979,  image:'diorjordan.jpg'},
-  {price:230, image:'airmax97.png'},
-  {price:95,  image:'nikerunner.png'},
-  {price:2100000, image:'solidgold.avif'},
-  {price:135,  image:'ugg.jpeg'}
-];
+[1170,"blackcats.webp"],
+[2380,"kaws4.jpg"],
+[80,"monarch.jpg"],
+[300,"bigredboots.jpg"],
+[37140, "airmag.webp"],
+[150, "blackaf1.png"],
+[1840,"travis.webp"],
+[120, "mcq.webp"],
+[240,"1906rnb.webp"],
+[440,"bred11.jpg"],
+[220, "foamrunners.jpg"],
+[9980, "diorjordan.jpg"],
+[230,"airmax97.png"],
+[95,"nikerunner.png"],
+[2100000,"solidgold.avif"],
+[140, "ugg.jpeg"]
+]
+
+
 
 function updateShoeImage () {
+  console.log("hellooo" )
   const shoeindex = document.getElementById('shoeSelect').value;
-  const shoeImage = document.getElementById('shoeimage');
-  shoeImage.src = shoesData[shoeIndex].image;
+  console.log(shoeindex)
+  const shoeImage = document.getElementById('shoeImage');
+  shoeImage.src = shoesData[shoeindex][1]
 
 }
 
-function chechGuess () {
+function checkGuess () {
   const shoeIndex = document.getElementById('shoeSelect').value
   const userGuess = document.getElementById('guessInput').value
   const guessNumber = parseInt(userGuess);
-  const actualPrice = shoesData [shoeIndex].price;
+  const actualPrice = shoesData [shoeIndex][0]
 
   if (guessNumber < actualPrice) {
     alert("Your guess is too low. Try a higher price");
