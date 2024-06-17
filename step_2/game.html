@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+
 <html>
 
 <head>
@@ -7,37 +8,61 @@
 <link rel = "stylesheet" href = "game.css">
 <link rel = "icon" href = "souleater.png">
 <script src = "script.js" defer></script>
-
+<style>
+#shoeImage {
+  max-width : 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+</style>
 </head>
-
 
 <body>
 
 <h1><center>Game</center></h1>
 
+<li><a href = "../index.html">Home Page</a></li>
+<center>
+<br>
+<label for = "shoeSelect"> Select a Pair of shoes:</label>
+<select id = "shoeSelect" onchange = "updateShoeImage()">
+<option value = "0">pair 1 </option>
+<option value = "1">pair 2 </option>
+<option value = "2">Pair 3 </option>
+<option value = "3">Pair 4 </option>
+<option value = "4">Pair 5 </option>
+<option value = "5">Pair 6 </option>
+<option value = "6">Pair 7 </option>
+<option value = "7">Pair 8 </option>
+<option value = "8">Pair 9 </option>
+<option value = "9">Pair 10 </option>
+<option value = "10">Pair 11 </option>
+<option value = "11">Pair 12 </option>
+<option value = "12">Pair 13 </option>
+<option value = "13">Pair 14 </option>
+<option value = "14">Pair 15 </option>
+
+
+</select>
 
 <ul>
 
-<li><a href = "../index.html">Home Page</a></li>
-
 <br>
-<div id = "kaws4">
-</div>
-
-
-<center>
-<div class="input-group mb-3">
-  <input type = "number" class = "form-control" id = "userInput" placeholder ="0$">
-  <div class = "input-group-append">
-    <button class ="btn btn-secondary" id = "subButton">Confirm</button>
-</div>
-</div>
-</center>
-
 
 </ul>
+<br>
+<img id="shoeImage" src = "" alt = "Shoe Image">
+
+<p>Guess the price of the selected shoes":</p>
+
+<input type="1170" id = "guessInput">
+
+<button onclick="checkGuess()">Submit Guess</button>
+
+</center>
+<script src = "sript.js"></script>
 
 </body>
 
-
 </html>
+
