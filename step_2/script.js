@@ -22,11 +22,6 @@ let nikerunner = 95
 let solidgold = 2100000
 let ugg = 135
 
-
- let shoeguess = [blackcats, kaws4, monarch, brb, airmag, blackaf1, travis, mcq, nbrb, foamrunners, diorjordan, airmax, nikerunner, solidgold, ugg]
-
- let images = ["blackcats.webp", "kaws4.jpg", "monarch.jpg", "bigredboots.jpg", "airmag.webp", "blackaf1.png", "travis.webp", "mcq.webp", "1906rnb.webp","bred11.jpg","foamrunners.jpg","diorjordan.jpg","airmax97.png","nikerunner.jpg","solidgold.avif","ugg.jpeg" ]
-
 function getInput(){
   var userinput = document.getElementById('userInput').value;
 }
