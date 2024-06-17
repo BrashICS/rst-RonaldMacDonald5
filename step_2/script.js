@@ -2,31 +2,9 @@
 
 const image = new Image()
 
-
-
-let blackcats = 1170
-let kaws4 = 2379
-let monarch = 80
-let brb = 300
-let airmag = 37136
-let blackaf1 = 150
-let travis = 1839
-let mcq = 120
-let nbrb = 240
-let bred = 439
-let foamrunners = 221
-let diorjordan = 9979
-let airmax = 230
-let nikerunner = 95
-let solidgold = 2100000
-let ugg = 135
-
 function getInput(){
   var userinput = document.getElementById('userInput').value;
 }
-
-
-
 
 
 const shoesData = [
@@ -51,7 +29,7 @@ const shoesData = [
 
 
 function updateShoeImage () {
-  
+
   const shoeindex = document.getElementById('shoeSelect').value;
   console.log(shoeindex)
   const shoeImage = document.getElementById('shoeImage');
